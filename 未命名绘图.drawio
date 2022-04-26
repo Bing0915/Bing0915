@@ -1,1 +1,135 @@
-<mxfile host="app.diagrams.net" modified="2022-04-26T02:22:30.157Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" version="17.1.3" etag="IcRcPcZXjf0ZTjMLnlTY" type="github"><diagram id="72FpJnGH8Xmt6JNDt0-3">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-26T06:19:30.870Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="xBtT7i0t0XvjXrPHZVD9" version="17.1.3" type="github">
+  <diagram id="72FpJnGH8Xmt6JNDt0-3" name="第 1 页">
+    <mxGraphModel dx="1426" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NClINAFRMNA3pdsFhhzp-1" value="&lt;font style=&quot;font-size: 14px&quot;&gt;监听模式下：&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="45" y="30" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-2" value="File" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-9" value="Watch&amp;nbsp; &amp;nbsp;Build" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NClINAFRMNA3pdsFhhzp-2" target="NClINAFRMNA3pdsFhhzp-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="170" as="sourcePoint" />
+            <mxPoint x="280" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-10" value="webpack" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="440" y="110" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-11" value="&lt;font style=&quot;font-size: 12px&quot;&gt;将更改进行重新编译，完成的 bundle 存在内存中。&lt;br&gt;打包时则通过 ProgressPlugin 将编译进度通过 websocket 推送到浏览器端&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="170" y="60" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-12" value="webpack-dev-server" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="110" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-13" value="webpack-dev-middleware" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="NClINAFRMNA3pdsFhhzp-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="130" as="sourcePoint" />
+            <mxPoint x="590" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-14" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=12;" edge="1" parent="1" target="NClINAFRMNA3pdsFhhzp-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="120" as="sourcePoint" />
+            <mxPoint x="730" y="30" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-15" value="compiler 根据&amp;nbsp;&lt;span style=&quot;color: rgb(255 , 80 , 44) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 13.92px ; text-align: left ; background-color: rgb(255 , 245 , 245)&quot;&gt;writeToDisk&lt;/span&gt;&lt;br&gt;决定存储位置（disk&amp;nbsp; or&amp;nbsp; memory）&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="15" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="NClINAFRMNA3pdsFhhzp-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="775" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="775" y="210" />
+              <mxPoint x="775" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-16" value="Sock.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="240" width="132.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-18" value="客户端" style="swimlane;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="215" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-19" value="&lt;font style=&quot;font-size: 18px&quot;&gt;websocket&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="NClINAFRMNA3pdsFhhzp-18">
+          <mxGeometry x="10" y="25" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-26" value="" style="endArrow=classic;html=1;rounded=0;fontSize=18;" edge="1" parent="NClINAFRMNA3pdsFhhzp-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="45" as="sourcePoint" />
+            <mxPoint x="-150" y="225" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-37" value="&lt;font style=&quot;font-size: 12px&quot;&gt;dev-server-client&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="NClINAFRMNA3pdsFhhzp-18">
+          <mxGeometry x="10" y="40" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-38" value="webpack/hot/dev-server" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="NClINAFRMNA3pdsFhhzp-18">
+          <mxGeometry x="10" y="70" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-20" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NClINAFRMNA3pdsFhhzp-18" target="NClINAFRMNA3pdsFhhzp-16">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="500" y="320" as="sourcePoint" />
+            <mxPoint x="600" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-21" value="通信" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="580" y="230" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-22" value="浏览器" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="110" y="420" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-27" value="webpack/hot/devserver" style="whiteSpace=wrap;html=1;fontStyle=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="701.25" y="500" width="147.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-30" value="&lt;span style=&quot;color: rgb(255 , 80 , 44) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 13.92px ; text-align: left ; background-color: rgb(255 , 245 , 245)&quot;&gt;module.hot.check&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="695" y="374" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-31" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=18;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="NClINAFRMNA3pdsFhhzp-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="520" as="sourcePoint" />
+            <mxPoint x="690" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="490" />
+              <mxPoint x="700" y="400" />
+              <mxPoint x="690" y="410" />
+              <mxPoint x="560" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-32" value="传递各种 hash" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="540" y="260" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-34" value="&lt;span style=&quot;color: rgb(18 , 18 , 18) ; font-family: , &amp;#34;system-ui&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;pingfang sc&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;source han sans sc&amp;#34; , &amp;#34;noto sans cjk sc&amp;#34; , &amp;#34;wenquanyi micro hei&amp;#34; , sans-serif ; font-size: medium ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;HotModuleReplacement.runtime&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="160" y="470" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-35" value="Ajax" style="endArrow=classic;html=1;rounded=0;fontSize=18;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="465" as="sourcePoint" />
+            <mxPoint x="320" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-36" value="json" style="endArrow=classic;html=1;rounded=0;fontSize=18;entryX=0.246;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="NClINAFRMNA3pdsFhhzp-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="310" as="sourcePoint" />
+            <mxPoint x="330" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="350" />
+              <mxPoint x="310" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NClINAFRMNA3pdsFhhzp-39" value="https://zhuanlan.zhihu.com/p/30669007" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="50" y="630" width="220" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
